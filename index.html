@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scientific Calculator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calc">
+    <div class="top-row">
+      <button class="mode-toggle" id="modeToggle">DEG</button>
+      <div class="memory-row" id="memoryIndicator">&nbsp;</div>
+    </div>
+
+    <div class="screen">
+      <div class="history" id="history">&nbsp;</div>
+      <div class="display" id="display">0</div>
+    </div>
+
+    <div class="keys sci-keys">
+      <button class="key sci" data-fn="sin">sin</button>
+      <button class="key sci" data-fn="cos">cos</button>
+      <button class="key sci" data-fn="tan">tan</button>
+      <button class="key sci" data-fn="log">log</button>
+      <button class="key sci" data-fn="ln">ln</button>
+
+      <button class="key sci" data-fn="sqrt">√</button>
+      <button class="key sci" data-fn="sq">x²</button>
+      <button class="key sci" data-op="^">xʸ</button>
+      <button class="key sci" data-const="pi">π</button>
+      <button class="key sci" data-const="e">e</button>
+    </div>
+
+    <div class="keys main-keys">
+      <button class="key mem" data-action="mc">MC</button>
+      <button class="key mem" data-action="mr">MR</button>
+      <button class="key mem" data-action="mminus">M−</button>
+      <button class="key mem" data-action="mplus">M+</button>
+
+      <button class="key func" data-action="clear">C</button>
+      <button class="key func" data-action="negate">±</button>
+      <button class="key func" data-action="percent">%</button>
+      <button class="key op" data-op="÷">÷</button>
+
+      <button class="key digit" data-num="7">7</button>
+      <button class="key digit" data-num="8">8</button>
+      <button class="key digit" data-num="9">9</button>
+      <button class="key op" data-op="×">×</button>
+
+      <button class="key digit" data-num="4">4</button>
+      <button class="key digit" data-num="5">5</button>
+      <button class="key digit" data-num="6">6</button>
+      <button class="key op" data-op="−">−</button>
+
+      <button class="key digit" data-num="1">1</button>
+      <button class="key digit" data-num="2">2</button>
+      <button class="key digit" data-num="3">3</button>
+      <button class="key op" data-op="+">+</button>
+
+      <button class="key digit zero" data-num="0">0</button>
+      <button class="key digit" data-action="decimal">.</button>
+      <button class="key op equals" data-action="equals">=</button>
+    </div>
+  </div>
+
+  <p class="footnote">Built with HTML, CSS &amp; JavaScript — CodeAlpha Frontend Internship, Task 2</p>
+
+<script src="script.js"></script>
+</body>
+</html>
